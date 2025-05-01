@@ -1,0 +1,17 @@
+# Terraform generated files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+crash.log
+
+# IDE/editor settings
+*.log
+*.bak
+*.tmp
+*.swp
+*.DS_Store
+
+# Keys (if private)
+keys/*
+!keys/*.pub  # only keep public keys if 
