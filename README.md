@@ -1,7 +1,25 @@
 # TerraLaunch
 # Terraform Project 🛠️🌐
 
-This repository contains Terraform configurations for provisioning and managing infrastructure.
+#📖 Project Description
+This repository contains Terraform configurations for provisioning and managing AWS infrastructure. The goal of this project is to provide a secure and scalable infrastructure foundation for small to mid-scale applications — all with a one-click deployment.
+
+#🚀 Key Features
+One-click provisioning of essential AWS resources
+Secure by design: Instances are deployed in private subnets and accessed via a Bastion host
+Highly available and scalable using Auto Scaling Groups (ASG)
+Modular and reusable Terraform code for ease of customization
+
+#🔧 Provisioned AWS Resources
+VPC with public and private subnets for network isolation
+EC2 Instances in private subnets (accessible only via Bastion)
+RDS Database in a private subnet for secure data storage
+Application Load Balancer (ALB) in a public subnet for routing external traffic
+Auto Scaling Group (ASG) for horizontal scaling
+Security Groups configured to allow:
+SSH access to private instances through a Bastion host
+Public HTTP/HTTPS access to applications via the ALB
+This setup ensures that application servers are not directly exposed to the internet, while still allowing users to access the app through a public ALB endpoint
 
 ## 🚧 Still in Progress
 
@@ -11,7 +29,7 @@ This project is currently **under development** and may not yet be fully functio
 
 This project includes Terraform modules and configurations to manage various resources such as:
 
-- EC2 instances 🖥️
+- EC2 instances 🖥️ - ASG,ALB
 - VPCs 🌍
 - RDS databases 🗃️
 - Security groups 🔒
@@ -24,7 +42,6 @@ Before running the Terraform code, make sure you have the following installed:
 - [Terraform](https://www.terraform.io/downloads.html) 🏗️
 - [AWS CLI](https://aws.amazon.com/cli/) (if deploying to AWS) ☁️
 - [An AWS account](https://aws.amazon.com/) 🌐
-- (Optional) [Git](https://git-scm.com/) for version control 🧑‍💻
 
 ## ⚙️ Setup
 
