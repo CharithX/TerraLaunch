@@ -1,5 +1,4 @@
-# TerraLaunch
-# Terraform Project 🛠️🌐
+# TerraLaunch - Terraform Project 🛠️🌐
 
 ## 📖 Project Description
 This repository contains Terraform configurations for provisioning and managing AWS infrastructure. The goal of this project is to provide a secure and scalable infrastructure foundation for small to mid-scale applications — all with a one-click deployment.
