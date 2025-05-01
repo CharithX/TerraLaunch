@@ -5,21 +5,22 @@
 This repository contains Terraform configurations for provisioning and managing AWS infrastructure. The goal of this project is to provide a secure and scalable infrastructure foundation for small to mid-scale applications — all with a one-click deployment.
 
 ## 🚀 Key Features
+
  - One-click provisioning of essential AWS resources
  - Secure by design: Instances are deployed in private subnets and accessed via a Bastion host
  - Highly available and scalable using Auto Scaling Groups (ASG)
  - Modular and reusable Terraform code for ease of customization
 
 ## 🔧 Provisioned AWS Resources
-VPC with public and private subnets for network isolation
-EC2 Instances in private subnets (accessible only via Bastion)
-RDS Database in a private subnet for secure data storage
-Application Load Balancer (ALB) in a public subnet for routing external traffic
-Auto Scaling Group (ASG) for horizontal scaling
-Security Groups configured to allow:
-SSH access to private instances through a Bastion host
-Public HTTP/HTTPS access to applications via the ALB
-This setup ensures that application servers are not directly exposed to the internet, while still allowing users to access the app through a public ALB endpoint
+
+ - VPC with public and private subnets for network isolation
+ - EC2 Instances in private subnets (accessible only via Bastion)
+ - RDS Database in a private subnet for secure data storage
+ - Application Load Balancer (ALB) in a public subnet for routing external traffic
+ - Auto Scaling Group (ASG) for horizontal scaling
+ - Security Groups configured to allow:
+       - SSH access to private instances through a Bastion host
+       - Public HTTP/HTTPS access to applications via the ALB
 
 ## 🚧 Still in Progress
 
