@@ -1,16 +1,16 @@
 # TerraLaunch
 # Terraform Project 🛠️🌐
 
-#📖 Project Description
+##📖 Project Description
 This repository contains Terraform configurations for provisioning and managing AWS infrastructure. The goal of this project is to provide a secure and scalable infrastructure foundation for small to mid-scale applications — all with a one-click deployment.
 
-#🚀 Key Features
+#$🚀 Key Features
 One-click provisioning of essential AWS resources
 Secure by design: Instances are deployed in private subnets and accessed via a Bastion host
 Highly available and scalable using Auto Scaling Groups (ASG)
 Modular and reusable Terraform code for ease of customization
 
-#🔧 Provisioned AWS Resources
+##🔧 Provisioned AWS Resources
 VPC with public and private subnets for network isolation
 EC2 Instances in private subnets (accessible only via Bastion)
 RDS Database in a private subnet for secure data storage
